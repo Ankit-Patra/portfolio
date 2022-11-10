@@ -244,7 +244,7 @@ form{
 }
 .hero{
     display:flex;
-    justify-content: space-around;
+    justify-content:space-between;
     align-items: center;
 }
 textarea{
@@ -295,6 +295,9 @@ textarea{
         display: flex;
         flex-direction: column;
     }
+    .contact-me{
+        padding-top: 0;
+    }
     .main-box h2{
         font-size: 47px;
         margin-bottom: 30px;
@@ -304,6 +307,7 @@ textarea{
     }
     .main-box .contact-info p{
         width:100%;
+        margin:0;
     }
     .form{
         margin: 0;
