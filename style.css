@@ -1,8 +1,10 @@
 *{
+    scroll-behavior: smooth;
+}
+body{
     margin: 0;
     padding:0;
     font-family: sans-serif;
-    scroll-behavior: smooth;
 }
 .header{
     position: relative;
@@ -25,9 +27,19 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
+    font-size: 20px;
     color: #000;
     font-weight: bold;
 
+}
+.detail
+{
+    margin-top:7rem;
+    
+}
+.arrow
+{
+    margin-top:2.5rem;
 }
 nav ul li a:hover{
     color: rgb(235, 87, 166);
@@ -49,22 +61,27 @@ span{
     color: #555;
     line-height:22px;
 }
-.detail a{
+.bn{
+    display: flex;
+    justify-content: space-between;
+}
+.bn a{
     background: #212121;
-    padding: 10px 18px;
+    padding: 15px 25px;
     text-decoration: none;
     font-weight: bold;
     color: #fff;
-    display: inline-block;
     margin: 30px 0;
     border-radius:6px;
 }
+.right-btn{
+    margin-right:30px;
+}
 .dp{
-    width: 45%;
+    width: 35%;
     height:80%;
 }
 .about{
-    width:100%;
     padding: 100px 0px;
 }
 .about-img{
@@ -249,12 +266,30 @@ form{
 }
 .hero{
     display:flex;
-    justify-content:space-around;
-    align-items: center;
+        justify-content:space-around;
+    padding:50px 0;
 }
 textarea{
     resize: fixed;
 }
+.hide {
+    opacity:0;
+}
+.show {
+    opacity:1;
+}
+.bottomMenu {
+    position: fixed;
+    bottom: 2%;
+    right:1%;
+    z-index: 1;
+    transition:all.5s;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+
 @media only screen and (max-width:768px){
     nav .logo{
         width:25%;
@@ -270,22 +305,20 @@ textarea{
         font-size: 25px;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
     .hero img{
         margin-top: 30px;
         width:75%;
     }
+    .detail
+    {
+        margin-top:6rem;
+    }
     .detail h1{
         font-size: 50px;
-        padding-top: 50px;
-        padding-left: 30px;
         justify-content: center;
-    }
-    .auto-type{
-        padding-left: 30px;
-    }
-    .detail a{
-        margin-left: 30px;
+        text-align: center;
     }
     .detail{
         width:85%;
@@ -354,5 +387,19 @@ textarea{
     .submit-button{
         margin-top:20px;
         margin-left:2.75rem;
+    }
+    .bn a
+    {
+        padding:10px 15px;
+    }
+    .hero{
+        padding:0;
+    }
+    nav{
+        padding:0;
+    };
+    
+    .{
+        display: none;
     }
 }
