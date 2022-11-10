@@ -316,6 +316,7 @@ textarea{
         width:80%;
     }
     .contact-1{
+        display: none;
         flex-direction: column;
     }
     .area{
