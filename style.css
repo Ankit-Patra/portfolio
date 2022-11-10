@@ -82,6 +82,9 @@ span{
     align-items: center;
     justify-content: space-around;
 }
+.main img{
+    padding-right: 60px;
+}
 .about-text h2{
     color: rgb(235, 87, 166);
     font-size: 75px;
@@ -188,7 +191,7 @@ footer p:nth-child(2){
 }
 .contact-me{
     width:100%;
-    padding: 100px 0px;
+    padding-bottom: 100px;
 }
 .main-box
 {
@@ -206,10 +209,12 @@ footer p:nth-child(2){
     margin-bottom: 20px;
 }
 .contact-info{
-    width: 45%;
     letter-spacing: 1px;
     font-size: 18px;
     margin-bottom: 45px;
+}
+.form{
+    padding-left: 60px;
 }
 form{
     margin-top: 50px;
@@ -244,15 +249,21 @@ form{
 }
 .hero{
     display:flex;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items: center;
 }
 textarea{
-    resize: vertical;
+    resize: fixed;
 }
 @media only screen and (max-width:768px){
     nav .logo{
-        width:30%;
+        width:25%;
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
+    nav ul li{
+        margin:5px 7px
     }
     .hero{
         flex-direction: column-reverse;
@@ -282,6 +293,9 @@ textarea{
     .about .main{
         width:80%;
     }
+    .about-text h5{
+        font-size:20px;
+    }
     .about .main img{
         display: none;
     }
@@ -289,7 +303,10 @@ textarea{
         font-size: 50px;
     }
     .about .about-text{
-        width:80%;
+        width:85%;
+    }
+    .about .about-text p{
+        font-size: 14px;
     }
     .main-box{
         display: flex;
@@ -308,10 +325,12 @@ textarea{
     .main-box .contact-info p{
         width:100%;
         margin:0;
+        font-size: 14px;
     }
     .form{
         margin: 0;
         width:85%;
+        padding: 0;
     }
     form{
         margin:0;
@@ -333,6 +352,7 @@ textarea{
         width:100vw;
     }
     .submit-button{
-        margin:0;
+        margin-top:20px;
+        margin-left:2.5rem;
     }
 }
