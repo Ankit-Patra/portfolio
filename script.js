@@ -1,12 +1,9 @@
-myID = document.getElementById("myID");
+const toTop = document.querySelector(".to-top");
 
-var myScrollFunc = function () {
-    var y = window.scrollY;
-    if (y >= 600) {
-        myID.className = "bottomMenu show"
-    } else {
-        myID.className = "bottomMenu hide"
-    }
-};
-
-window.addEventListener("scroll", myScrollFunc);
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
+  }
+})

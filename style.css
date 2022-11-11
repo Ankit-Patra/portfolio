@@ -281,12 +281,27 @@ textarea{
 .show {
     opacity:1;
 }
-.bottomMenu {
+.to-top {
     position: fixed;
-    bottom: 2%;
-    right:1%;
-    z-index: 1;
-    transition:all.5s;
+    bottom: 16px;
+    right:32px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.to-top.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
 }
 .buttons{
     display: flex;
@@ -410,3 +425,4 @@ textarea{
         display: none;
     }
 }
+
