@@ -42,7 +42,7 @@ nav ul li a{
     margin-top:2.5rem;
 }
 nav ul li a:hover{
-    color: rgb(235, 87, 166);
+    color: #00ABB3;
 }
 .logo{
     margin: 0;
@@ -55,7 +55,7 @@ nav ul li a:hover{
     margin-bottom: 20px;
 }
 span{
-    color: rgb(235, 87, 166);
+    color: #00ABB3;
 }
 .detail p{
     color: #555;
@@ -103,7 +103,7 @@ span{
     padding-right: 60px;
 }
 .about-text h2{
-    color: rgb(235, 87, 166);
+    color: #00ABB3;
     font-size: 75px;
     text-transform: capitalize;
     margin-bottom: 20px;
@@ -122,7 +122,7 @@ span{
     margin-bottom: 45px;
 }
 footer{
-    background-color:#eb57a6;
+    background-color:#00ABB3;
     position:relative;
     width:100%;
     height:400px;
@@ -156,7 +156,7 @@ footer p:nth-child(2){
     background: #fff;
     border-radius: 50%;
     margin: 22px 10px;
-    color: #eb57a6;
+    color: #00ABB3;
     text-decoration: none;
     font-size: 25px;
 }
@@ -195,7 +195,7 @@ footer p:nth-child(2){
 {
     width:10rem;
     height:3rem;
-    background-color: #eb57a6;
+    background-color: #00ABB3;
     color:white;
     border:none;
     font-size:16px;
@@ -204,7 +204,7 @@ footer p:nth-child(2){
 .submit-button:hover
 {
     cursor:pointer;
-    background-color: #eb57a6;
+    background-color: #00ABB3;
 }
 .contact-me{
     width:100%;
@@ -220,7 +220,7 @@ footer p:nth-child(2){
     justify-content: space-around;
 }
 .contact-info h2{
-    color: #eb57a6;
+    color: #00ABB3;
     font-size: 75px;
     text-transform: capitalize;
     margin-bottom: 20px;
@@ -399,9 +399,9 @@ textarea{
     }
     nav{
         padding:0;
-    };
+    }
     
-    .none{
+    #myID{
         display: none !important;
     }
 }
