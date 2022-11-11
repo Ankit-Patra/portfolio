@@ -177,10 +177,10 @@ footer p:nth-child(2){
 {
     border:none;
     background-color:#EADFDF;
-    width:600px;
     height: 40px;
     margin-top:1rem;
     margin-bottom:1rem;
+    width: 100%;
 }
 .text-area
 {
@@ -188,8 +188,8 @@ footer p:nth-child(2){
     margin-bottom:1rem;
     border:none;
     background-color: #EADFDF;
-    width:600px;
     height: 100px;
+    width: 100%;
 }
 .submit-button
 {
@@ -234,8 +234,10 @@ footer p:nth-child(2){
     padding-left: 60px;
 }
 form{
-    margin-top: 50px;
+    margin-top: 100px;
+    width: 100%;
 }
+
 .contact-1{
     display:flex;
     justify-content: flex-start;
@@ -402,6 +404,6 @@ textarea{
     }
     
     #myID{
-        display: none !important;
+        display: none;
     }
 }
