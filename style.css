@@ -33,7 +33,20 @@ nav ul li a{
     font-size: 20px;
     color: #000;
     font-weight: bold;
-
+    display: inline-block;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #11a5d3;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 .detail
 {
@@ -45,7 +58,12 @@ nav ul li a{
     margin-top:2.5rem;
 }
 nav ul li a:hover{
-    color: #073e90;
+    color: #11a5d3;
+}
+nav ul li a:hover::after{
+    color: #11a5d3;
+    transform: scaleX(1);
+  transform-origin: bottom left;
 }
 .logo{
     margin: 0;
@@ -68,7 +86,7 @@ span{
     display: flex;
     justify-content: space-between;
 }
-.bn a{
+.bn a ,.button{
     background: #212121;
     padding: 15px 25px;
     text-decoration: none;
@@ -195,16 +213,15 @@ footer p:nth-child(2){
 {
     width:10rem;
     height:3rem;
-    background-color: #073e90;
+    background-color: #11a5d3;
     color:white;
     border:none;
     font-size:16px;
-    margin-left:13rem;
 }
 .submit-button:hover
 {
     cursor:pointer;
-    background-color: #073e90;
+    background-color: #11a5d3;
 }
 .contact-me{
     width:100%;
@@ -230,7 +247,8 @@ footer p:nth-child(2){
     margin-bottom: 45px;
 }
 .form{
-    padding-left: 60px;
+    padding-left: 50px;
+    width: 550px;
 }
 form{
     margin-top: 100px;
